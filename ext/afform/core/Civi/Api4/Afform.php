@@ -203,6 +203,10 @@ class Afform extends Generic\AbstractEntity {
           'data_type' => 'Array',
           'description' => 'HTML form layout; format is controlled by layoutFormat param',
         ],
+        [
+          'name' => 'enable_captcha',
+          'data_type' => 'Boolean',
+        ],
       ];
       // Calculated fields returned by get action
       if ($self->getAction() === 'get') {

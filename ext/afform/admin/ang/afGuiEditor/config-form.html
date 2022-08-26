@@ -106,6 +106,13 @@
       <p class="help-block">{{:: ts('Allow CiviCRM users to add the form to their home dashboard.') }}</p>
     </div>
 
+    <div class="form-group">
+      <label>
+        <input type="checkbox" ng-model="editor.afform.enable_captcha">
+        {{:: ts('Enable reCaptcha') }}
+      </label>
+      <p class="help-block">{{:: ts('This will add reCaptcha if it is configured.') }}</p>
+    </div>
   </fieldset>
 
   <!--  Submit actions are only applicable to form types with a submit button (exclude blocks and search forms) -->
